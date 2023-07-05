@@ -5,10 +5,7 @@ Steps:
 
 1. Create a script (create_device_hardware_registry.ps1) in Workspace One UEM: The script creates registries to store the device hardware details (CPU, Memory, HardDisk Disk, GPU, MotherBoard). The script would be executed once during enrollment to capture these details which will be used by sensors to monitor any Hardware changes.
 
-  -Execution Context & Privileges: System Context
-  -Execution Architecture: Auto
-  -Timeout: 60
-  -Assignment Trigger: Run once immediately
+  -Execution Context & Privileges: System Context   -Execution Architecture: Auto   -Timeout: 60   -Assignment Trigger: Run once immediately
 
 2. Create sensors (check_cpu_hardware.ps1, check_gpu_hardware.ps1, check_harddisk_hardware.ps1, check_motherboard_hardware.ps1, check_ram_hardware.ps1) in Workspace One UEM: These sensors run periodically to check the current device hardware details and compare them with the previous registry. And validates if there is any change in the value and report back in UEM.
 
