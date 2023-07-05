@@ -4,7 +4,7 @@ The Script and Sensors will monitor the device's Hardware components and alerts 
 Steps:
 
 1. Create a script (create_device_hardware_registry.ps1) in Workspace One UEM.
-2. The script creates registries to store the device hardware details (CPU, Memory, HardDisk Disk, GPU, MotherBoard). The script would be executed once during enrollment to capture these details which will be used by sensors to monitor any Hardware changes.
+The script creates registries to store the device hardware details (CPU, Memory, HardDisk Disk, GPU, MotherBoard). The script would be executed once during enrollment to capture these details which will be used by sensors to monitor any Hardware changes.
 
 Execution Context & Privileges: System Context
 Execution Architecture: Auto
